@@ -11,4 +11,6 @@ interface ParagraphProps {
     textStyle: ParagraphStyle;
 }
 
-export const Paragraph = (props: React.PropsWithChildren<ParagraphProps>) => <p className={`paragraph-${props.textStyle}`}>{props.children}</p>;
+const Paragraph = (props: React.PropsWithChildren<ParagraphProps>) => <p className={`paragraph-${props.textStyle}`}>{props.children}</p>;
+
+export default Paragraph;

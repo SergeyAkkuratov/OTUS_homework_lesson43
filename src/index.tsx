@@ -3,7 +3,7 @@ import "./style.css";
 import { createRoot } from "react-dom/client";
 import Header from "./stories/Header";
 import SpaceBlock, { SpaceBlockStyle } from "./stories/SpaceBlock";
-import { Paragraph, ParagraphStyle } from "./stories/Paragraph";
+import Paragraph, { ParagraphStyle } from "./stories/Paragraph";
 import CollapseBlock from "./stories/CollapseBlock";
 import Image, { ImageSize } from "./stories/Image";
 import testImage from "./stories/assets/test.jpg"

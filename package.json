@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Выполнение ДЗ lesson43: Умные и глупые компоненты в разрезе React",
     "scripts": {
-        "test": "tsc && jest --passWithNoTests --coverage",
+        "test": "tsc --noEmit && jest --passWithNoTests --coverage",
         "lint": "prettier --check . && eslint . --ext .js,.ts",
         "lint:fix": "prettier --write . && eslint . --fix",
         "build": "webpack --mode=production",
