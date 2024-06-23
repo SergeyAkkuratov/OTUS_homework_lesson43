@@ -129,4 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# React Storybook
+storybook-static/
 *storybook.log

@@ -10,7 +10,8 @@
         "start": "webpack serve --mode=development",
         "pack": "tsc",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build",
+        "loki-tests": "loki --requireReference --reactUri file:./storybook-static"
     },
     "repository": {
         "type": "git",

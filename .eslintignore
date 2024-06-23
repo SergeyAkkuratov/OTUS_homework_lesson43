@@ -2,3 +2,4 @@ coverage
 dist
 webpack.config.js
 module
+storybook-static

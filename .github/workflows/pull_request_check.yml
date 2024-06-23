@@ -34,15 +34,18 @@ jobs:
             - name: Test check
               run: |
                   npm run test
-            - name: Build
+            - name: Build Storybook
               run: |
-                  npm run build
+                  npm run build-storybook
+            - name: Loki tests
+              run: |
+                  npm run loki-tests
             - name: Setup Pages
               uses: actions/configure-pages@v4
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: "./dist"
+                  path: "./storybook-static"
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
