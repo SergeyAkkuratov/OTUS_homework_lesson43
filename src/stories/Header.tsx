@@ -1,7 +1,7 @@
 import React from "react";
 
 interface HeaderProps {
-    level: 1 | 2 | 3 | 4 | 5 | 6;
+    level: number;
 }
 
 const Header = (props: React.PropsWithChildren<HeaderProps>) => {
