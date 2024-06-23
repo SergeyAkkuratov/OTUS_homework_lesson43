@@ -1,0 +1,17 @@
+.paragraph-common {
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.paragraph-main {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.paragraph-citation {
+  font-size: 100%;
+  font-weight: bold;
+  font-style: italic;
+}
