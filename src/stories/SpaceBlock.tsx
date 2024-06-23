@@ -11,6 +11,8 @@ interface SpaceBlockProps {
     style?: SpaceBlockStyle;
 }
 
-const SpaceBlock = ({ style = SpaceBlockStyle.common, ...props }: SpaceBlockProps) => <hr data-testid="space-block" className={`space-block-${style}`} {...props} />;
+const SpaceBlock = ({ style = SpaceBlockStyle.common, ...props }: SpaceBlockProps) => (
+    <hr data-testid="space-block" className={`space-block-${style}`} {...props} />
+);
 
 export default SpaceBlock;

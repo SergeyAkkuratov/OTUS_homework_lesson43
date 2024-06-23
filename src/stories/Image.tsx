@@ -12,6 +12,8 @@ interface ImageProps {
     size?: ImageSize;
 }
 
-const Image = ({ src, size = ImageSize.common, ...props }: ImageProps) => <img data-testid="image-block" src={src} className={`image-size-${size}`} {...props} />;
+const Image = ({ src, size = ImageSize.common, ...props }: ImageProps) => (
+    <img data-testid="image-block" src={src} className={`image-size-${size}`} {...props} />
+);
 
 export default Image;
