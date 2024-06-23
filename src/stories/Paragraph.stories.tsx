@@ -1,14 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Paragraph, ParagraphStyle } from './Paragraph';
+import type { Meta, StoryObj } from "@storybook/react";
+import { Paragraph, ParagraphStyle } from "./Paragraph";
 
 const meta = {
-    title: 'Example/Paragraph',
+    title: "Example/Paragraph",
     component: Paragraph,
     parameters: {
-        layout: 'centered',
+        layout: "centered",
     },
-    tags: ['autodocs'],
-    args: { text: "Example" },
+    tags: ["autodocs"],
 } satisfies Meta<typeof Paragraph>;
 
 export default meta;
@@ -16,21 +15,21 @@ type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
-        text: "This is MAIN text paragraph",
-        textStyle: ParagraphStyle.MAIN
+        children: "This is MAIN text paragraph",
+        textStyle: ParagraphStyle.main,
     },
 };
 
 export const Citation: Story = {
     args: {
-        text: "This is Citation text paragraph",
-        textStyle: ParagraphStyle.CITATION
+        children: "This is Citation text paragraph",
+        textStyle: ParagraphStyle.citation,
     },
 };
 
 export const Common: Story = {
     args: {
-        text: "This is Common text paragraph",
-        textStyle: ParagraphStyle.COMMON
+        children: "This is Common text paragraph",
+        textStyle: ParagraphStyle.common,
     },
 };

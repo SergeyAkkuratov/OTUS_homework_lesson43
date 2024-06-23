@@ -1,28 +1,14 @@
-import React from 'react';
-import './paragraph.css';
+import React from "react";
+import "./paragraph.css";
 
 export enum ParagraphStyle {
-    COMMON = "COMMON",
-    CITATION = "CITATION",
-    MAIN = "MAIN"
+    common = "common",
+    citation = "citation",
+    main = "main",
 }
 
 interface ParagraphProps {
-    text: string;
     textStyle: ParagraphStyle;
 }
 
-export const Paragraph = ({
-    text,
-    textStyle = ParagraphStyle.COMMON,
-    ...props
-}: ParagraphProps) => {
-    return (
-        <p
-            className={`paragraph-${textStyle.toLowerCase()}`}
-            {...props}
-        >
-            {text}
-        </p>
-    );
-};
+export const Paragraph = (props: React.PropsWithChildren<ParagraphProps>) => <p className={`paragraph-${props.textStyle}`}>{props.children}</p>;

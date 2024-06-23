@@ -1,0 +1,9 @@
+.collapse-block {
+    text-align: left;
+}
+
+.collapse-block-title {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
