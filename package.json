@@ -11,7 +11,7 @@
         "pack": "tsc",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
-        "loki-tests": "loki --requireReference --reactUri file:./storybook-static"
+        "loki-tests": "loki --reactUri=\"file:./storybook-static\""
     },
     "repository": {
         "type": "git",
