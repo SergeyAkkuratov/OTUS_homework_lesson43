@@ -8,9 +8,9 @@ export enum SpaceBlockStyle {
 }
 
 interface SpaceBlockProps {
-    style: SpaceBlockStyle;
+    style?: SpaceBlockStyle;
 }
 
-const SpaceBlock = ({ style = SpaceBlockStyle.common, ...props }: SpaceBlockProps) => <hr className={`space-block-${style}`} {...props} />;
+const SpaceBlock = ({ style = SpaceBlockStyle.common, ...props }: SpaceBlockProps) => <hr data-testid="space-block" className={`space-block-${style}`} {...props} />;
 
 export default SpaceBlock;

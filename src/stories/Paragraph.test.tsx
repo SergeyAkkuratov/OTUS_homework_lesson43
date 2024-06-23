@@ -13,9 +13,9 @@ describe("Paragraph", () => {
     ("should create paragraph with style %p", (style) => {
         render(<Paragraph textStyle={style}>TEST</Paragraph>);
 
-        const header = screen.getByText("TEST");
-        expect(header).toBeInTheDocument();
-        expect(header.tagName).toBe(`P`);
-        expect(header.classList).toContain(`paragraph-${style}`);
+        const element = screen.getByText("TEST");
+        expect(element).toBeInTheDocument();
+        expect(element.tagName).toBe(`P`);
+        expect(element.classList).toContain(`paragraph-${style}`);
     })
 })
