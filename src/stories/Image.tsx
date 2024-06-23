@@ -9,9 +9,9 @@ export enum ImageSize {
 
 interface ImageProps {
     src: string;
-    size: ImageSize;
+    size?: ImageSize;
 }
 
-const Image = ({ src, size = ImageSize.common, ...props }: ImageProps) => <img src={src} className={`image-size-${size}`} {...props} />;
+const Image = ({ src, size = ImageSize.common, ...props }: ImageProps) => <img data-testid="image-block" src={src} className={`image-size-${size}`} {...props} />;
 
 export default Image;
