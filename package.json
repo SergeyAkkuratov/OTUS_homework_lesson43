@@ -9,9 +9,10 @@
         "build": "webpack --mode=production",
         "start": "webpack serve --mode=development",
         "pack": "tsc",
-        "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build",
-        "loki-tests": "loki --reactUri=\"file:./storybook-static\""
+        "storybook": "storybook dev -h \"0.0.0.0\" -p 6006",
+        "build-storybook": "storybook build --test --quiet",
+        "loki-test": "loki test --requireReference --reactUri file:./storybook-static",
+        "loki-update": "loki update --requireReference --reactUri file:./storybook-static"
     },
     "repository": {
         "type": "git",
