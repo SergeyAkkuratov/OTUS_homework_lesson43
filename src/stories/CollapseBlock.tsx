@@ -10,11 +10,11 @@ const CollapseBlock = (props: React.PropsWithChildren<CollapseBlockProps>) => {
     const [isCollapsed, setIsCollapsed] = useState(props.collapsed);
 
     return (
-        <div className="collapse-block">
-            <div className="collapse-block-title" onClick={() => setIsCollapsed(!isCollapsed)}>
+        <div data-testid="collapse-block" className="collapse-block">
+            <div data-testid="collapse-block-title" className="collapse-block-title" onClick={() => setIsCollapsed(!isCollapsed)}>
                 {props.title}
             </div>
-            {!isCollapsed && <div>{props.children}</div>}
+            {!isCollapsed && <div data-testid="collapse-block-inner">{props.children}</div>}
         </div>
     );
 };
